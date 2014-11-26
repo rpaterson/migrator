@@ -19,10 +19,13 @@ coverage
 # Compiled binary addons (http://nodejs.org/api/addons.html)
 build/Release
 
-# Dependency directory
-# Commenting this out is preferred by some people, see
-# https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git-
-node_modules
+# Dependency directory - ignore only dev dependencies
+/node_modules/*
+!/node_modules/bluebird
+!/node_modules/lodash
+!/node_modules/moment
+!/node_modules/redefine
+!/node_modules/resolve
 
 # Users Environment Variables
 .lock-wscript
